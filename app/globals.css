@@ -409,6 +409,11 @@ section { padding: 120px 0; }
   font-size: 28px;
   color: var(--text);
   position: relative;
+  transition: padding 0.3s ease-in;
+}
+
+.career-row:hover {
+  padding: 28px 0;
 }
 
 .career-row::before {
@@ -423,6 +428,15 @@ section { padding: 120px 0; }
 
 .career-row__cell { font-weight: 500; letter-spacing: -0.02em; }
 .career-row__end { text-align: right; }
+
+.career-row__content {
+  display: inline-block;
+  transition: transform 0.3s ease-in;
+}
+
+.career-row:hover .career-row__content {
+  transform: translateY(-4px);
+}
 
 .career-brand {
   display: inline-flex;
