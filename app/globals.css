@@ -409,11 +409,6 @@ section { padding: 120px 0; }
   font-size: 28px;
   color: var(--text);
   position: relative;
-  transition: padding 0.3s ease-in;
-}
-
-.career-row:hover {
-  padding: 28px 0;
 }
 
 .career-row::before {
@@ -431,11 +426,6 @@ section { padding: 120px 0; }
 
 .career-row__content {
   display: inline-block;
-  transition: transform 0.3s ease-in;
-}
-
-.career-row:hover .career-row__content {
-  transform: translateY(-4px);
 }
 
 .career-brand {
@@ -476,7 +466,7 @@ section { padding: 120px 0; }
 .rise-swap__inner {
   display: flex;
   flex-direction: column;
-  transition: transform 0.55s var(--ease-out);
+  transition: transform 0.3s ease-in;
   will-change: transform;
 }
 
@@ -487,8 +477,13 @@ section { padding: 120px 0; }
   white-space: nowrap;
 }
 
-.rise-swap--trigger-self:hover .rise-swap__inner { transform: translateY(-100%); }
-.rise-trigger:hover .rise-swap__inner { transform: translateY(-100%); }
+/* Добавляем отступ между строками, чтобы не слипались */
+.rise-swap__row--bottom {
+  margin-top: 8px;
+}
+
+.rise-swap--trigger-self:hover .rise-swap__inner { transform: translateY(calc(-100% - 8px)); }
+.rise-trigger:hover .rise-swap__inner { transform: translateY(calc(-100% - 8px)); }
 
 /* В ячейке brand высота больше из-за логотипа */
 .career-row__brand-cell .rise-swap,
