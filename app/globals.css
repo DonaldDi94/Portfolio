@@ -506,6 +506,12 @@ section { padding: 120px 0; }
 .career-row__brand-cell .rise-swap__row { height: 52px; line-height: 52px; }
 .career-row__brand-cell .career-brand { line-height: 52px; }
 
+/* Устанавливаем единую высоту для всех ячеек */
+.career-row__mid .rise-swap,
+.career-row__mid .rise-swap__row,
+.career-row__end .rise-swap,
+.career-row__end .rise-swap__row { height: 52px; line-height: 52px; }
+
 .rise-swap--trigger-self:hover .rise-swap__inner { transform: translateY(calc(-100% - 16px)); }
 .rise-trigger:hover .rise-swap__inner { transform: translateY(calc(-100% - 16px)); }
 
