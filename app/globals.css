@@ -348,11 +348,11 @@ section { padding: 120px 0; }
   justify-content: center;
   background: var(--tag-bg);
   color: var(--text-muted);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  border-radius: 8px;
-  height: 32px;
-  width: 32px;
+  border-radius: 12px;
+  height: 56px;
+  width: 56px;
   overflow: hidden;
   transition: background 0.35s var(--ease-out), color 0.35s var(--ease-out);
   flex-shrink: 0;
@@ -374,8 +374,8 @@ section { padding: 120px 0; }
 }
 
 .case-tag__arrow svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .case-card:hover .case-tag {
