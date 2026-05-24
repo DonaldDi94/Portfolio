@@ -79,6 +79,7 @@ export default function TypewriterText({
         letterSpacing: '-0.01em',
         fontFamily: '"Inter", "Inter Placeholder", sans-serif',
         color: '#fff',
+        minHeight: `${fontSize * 1.2}px`,
       }}
     >
       {text}

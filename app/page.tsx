@@ -25,7 +25,7 @@ export default function HomePage() {
 
           <div className="hero-stage">
             <div className="hero-name-row">
-              <span className="hero-name">Anatolii Bolshanin</span>
+              <span className="hero-name">Ivan Linkevich</span>
               <span className="hero-bubble-wrap">
                 <span className="hero-bubble">
                   <TypewriterText words={HERO_WORDS} fontSize={14} />
