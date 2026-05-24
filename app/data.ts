@@ -15,7 +15,64 @@ export type CaseItem = {
   results?: CaseResult[];
 };
 
-export const cases: CaseItem[] = [];
+export const cases: CaseItem[] = [
+  {
+    title: 'Платёжный виджет',
+    description: 'Редизайн главной тулзы для инвойсов',
+    tag: 'B2B',
+    image: '/images/case-payment.png',
+    href: '#payment-widget',
+    bg: '#e8eaee',
+    results: [
+      { label: 'Время до цели', value: '-49%', tone: 'down' },
+      { label: 'Успешные оплаты', value: '+27%', tone: 'up' },
+      { label: 'Моб. конверсия', value: '+14%', tone: 'up' },
+      { label: 'Ошибки с монетой', value: '-72%', tone: 'down' },
+      { label: 'Обращения в саппорт', value: '-90%', sub: 'по поводу возврата', tone: 'down' },
+    ],
+  },
+  {
+    title: 'Исследование мобилки',
+    description: 'Поиск проблемных экранов через юз-тесты и интервью',
+    tag: 'B2C',
+    image: '/images/case-mobile.png',
+    href: '#mobile-research',
+    bg: '#edeeed',
+    results: [
+      { label: 'Проблемных экранов', value: '17', tone: 'up' },
+      { label: 'Юз-тестов', value: '30+', tone: 'up' },
+      { label: 'Интервью', value: '24', tone: 'up' },
+      { label: 'Гипотез валидировано', value: '12', tone: 'up' },
+    ],
+  },
+  {
+    title: 'Редизайн сайта',
+    description: 'Переосмысление воронки и внедрение дизайн системы',
+    tag: 'B2C',
+    image: '/images/case-landing.png',
+    href: '#landing',
+    bg: '#edeeed',
+    results: [
+      { label: 'Конверсия в регу', value: '+34%', sub: 'Customer', tone: 'up' },
+      { label: 'Конверсия в регу', value: '+21%', sub: 'Business', tone: 'up' },
+      { label: 'TTM', value: '-37%', tone: 'down' },
+    ],
+  },
+  {
+    title: 'Виджет вывода',
+    description: 'Редизайн дейли тулзы для отправки средств',
+    tag: 'B2B',
+    image: '/images/case-withdrawal.png',
+    href: '#withdrawal',
+    bg: '#edeeed',
+    results: [
+      { label: 'Успешные выводы', value: '+19%', tone: 'up' },
+      { label: 'Ошибки ввода', value: '-44%', tone: 'down' },
+      { label: 'Время операции', value: '-28%', tone: 'down' },
+      { label: 'Возвраты', value: '-61%', tone: 'down' },
+    ],
+  },
+];
 
 export type CareerItem = {
   logo: string;
