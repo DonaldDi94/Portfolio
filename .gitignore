@@ -1,13 +1,56 @@
+```
+# Dependencies
 node_modules/
-.next/
-out/
 
-.DS_Store
+# Logs and temp files
 *.log
-.env*
-!.env.example
+*.tmp
 
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
 .vscode/
 .idea/
 
-next-env.d.ts
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+```
