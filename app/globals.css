@@ -498,7 +498,7 @@ section { padding: 120px 0; }
 }
 .career-row__mid .rise-swap__row--bottom,
 .career-row__end .rise-swap__row--bottom {
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 /* В ячейке brand высота больше из-за логотипа */
