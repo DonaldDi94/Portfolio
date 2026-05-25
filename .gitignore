@@ -1,53 +1,66 @@
-```gitignore
-# Dependencies
-node_modules/
+# Examples
 
-# Build outputs
+## Example 1:
+
+Input:
+### Added files:
+[src/main.py, README.md, config.json]
+
+### Deleted files:
+[old/unused.py]
+
+### Modified files:
+[utils.py]
+
+### current .gitignore Content
+(empty)
+
+Expected Output:
+(empty — output nothing)
+
+## Example 2 (Project with artifacts):
+
+Input:
+### Added files:
+[pycache/main.cpython-310.pyc, dist/app.js, .env.local, .vscode/settings.json]
+
+### Deleted files:
+[]
+
+### Modified files:
+[]
+
+### current .gitignore Content
+*.log
+
+Expected Output:
+```
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+*.o
+*.obj
 dist/
 build/
-.next/
-out/
 
-# Environment variables
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
 .env
 .env.local
 .env.*
 
-# IDE specific
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# Python specific
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-.venv/
-.env/
-
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Temporary files
-*.tmp
-*.temp
 ```
 
-Wait, let me reconsider. The changes only include CSS and TSX files, which are source files. No build artifacts, dependencies, or temporary files are shown in the changes. According to rule #6, if the change list contains only source or config files and no build artifacts, dependencies, or temp files, I should output an empty .gitignore.
-
-```gitignore
-
-```
+Final reminder: Output ONLY the .gitignore content. If nothing should be ignored, output NOTHING.

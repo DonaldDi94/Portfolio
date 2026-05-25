@@ -206,6 +206,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   align-items: start;
   gap: 24px;
   padding: 20px 0 0;
+  height: 22px;
 }
 
 .hero-contacts {
