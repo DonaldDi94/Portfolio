@@ -121,33 +121,6 @@ export const careerTrack: CareerItem[] = [
     period: '2019-2021',
     url: 'https://www.gurucan.com/',
   },
-  {
-    logo: '/logos/sber.png',
-    company: 'СБЕР',
-    description: 'Страховые продукты',
-    duration: '0,5 года',
-    role: 'Старший дизайнер',
-    period: '2019',
-    url: 'https://www.sberbank.ru/ru/person',
-  },
-  {
-    logo: '/logos/itpark.png',
-    company: 'IT-park',
-    description: 'Дизайн всего продукта',
-    duration: '4 года',
-    role: 'UX/UI → Team Lead',
-    period: '2015-2019',
-    url: 'https://itpark.spb.ru/',
-  },
-  {
-    logo: '/logos/endylab.png',
-    company: 'Endy lab',
-    description: 'Портал для Sushi Wok',
-    duration: '1 год',
-    role: 'UX/UI дизайнер',
-    period: '2014-2015',
-    url: 'https://endylab.ru/',
-  },
 ];
 
 export type Skill = { num: string; title: string; description: string };
