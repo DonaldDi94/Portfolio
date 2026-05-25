@@ -354,7 +354,7 @@ section { padding: 120px 0; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--tag-bg);
+  background: #EDEDED;
   color: var(--text-muted);
   font-size: 16px;
   font-weight: 600;
