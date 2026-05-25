@@ -3,34 +3,28 @@
 *.tmp
 *.swp
 
-# Environment variables
+# Environment
 .env
 .env.local
-*.env.*
+.env.
+
+# Editors
+.vscode/
+.idea/
 
 # Dependencies
 node_modules/
-**/venv/
-**/.venv/
-**/__pycache__/
-**/.mypy_cache/
-**/.pytest_cache/
-**/.ruff_cache/
-**/target/
-**/.gradle/
-**/build/
-**/dist/
-**/out/
+venv/
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
 
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-**/.DS_Store
-**/Thumbs.db
-
-# Compiled files
+# Build artifacts
+dist/
+build/
 *.pyc
 *.class
 *.o
@@ -40,9 +34,12 @@ node_modules/
 *.a
 *.obj
 *.out
-*.bin
 
-# Coverage reports
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage
 coverage/
 htmlcov/
 .coverage
@@ -70,7 +67,3 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# System files
-.DS_Store
-Thumbs.db
