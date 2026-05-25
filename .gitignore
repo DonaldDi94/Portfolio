@@ -1,11 +1,107 @@
-# Examples 1:
-# Project with only source/config files - no build artifacts, dependencies, or temp files
+```
+# Dependencies
+node_modules/
 
-# Example 2:
-# Project with artifacts
-*.pyc
-__pycache__/
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+out/
+
+# Logs
 *.log
-.env
+
+# Environment variables
 .env.local
+.env.*
+
+# IDE files
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/modules/
+.DS_Store
+Thumbs.db
+
+# Compiled and binary files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+
+# Testing
+coverage/
+htmlcov/
+.coverage
+.pytest_cache/
+.mypy_cache/
+
+# Gradle
+.gradle/
+build/
+
+# Rust
+target/
+
+# Go
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.hprof
+.DS_Store
+!src/main/resources/application-*.yml
+!src/main/resources/application-*.properties
+```
