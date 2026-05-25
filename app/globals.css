@@ -418,7 +418,7 @@ section { padding: 120px 0; }
 
 .career-row {
   display: grid;
-  grid-template-columns: 320px 1fr auto;
+  grid-template-columns: 332px 1fr auto;
   align-items: center;
   gap: 32px;
   padding: 18px 0;
