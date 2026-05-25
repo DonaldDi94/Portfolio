@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   font-family: var(--font-onest), 'Onest', sans-serif;
   color: #9e9e9c;
   font-size: 24px;
-  line-height: 1.4;
+  line-height: 1.1;
   max-width: 500px;
   justify-self: end;
   text-align: left;
