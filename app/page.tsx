@@ -23,21 +23,42 @@ export default function HomePage() {
       <section className="hero">
         <div className="container">
           <h1 className="hero-meta">
-            <span className="product-text orange">{'{'}</span>
-            <span className="product-text">p</span>
-            <span className="product-text">r</span>
-            <span className="product-text">o</span>
-            <span className="product-text">d</span>
-            <span className="product-text">u</span>
-            <span className="product-text">c</span>
-            <span className="product-text">t</span>
-            <span className="product-text orange">{'}'}</span>
+            {['{', 'p', 'r', 'o', 'd', 'u', 'c', 't', '}'].map((char, idx) => (
+              <span 
+                key={idx} 
+                className={`product-text${char === '{' || char === '}' ? ' orange' : ''}`}
+                style={{
+                  display: 'inline-block',
+                  opacity: 0,
+                  transform: 'translateY(20px)',
+                  animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${100 + idx * 50}ms forwards`
+                }}
+              >
+                {char}
+              </span>
+            ))}
           </h1>
 
           <div className="hero-stage">
             <div className="hero-name-row">
-              <span className="hero-name">Ivan Linkevich</span>
-              <span className="hero-bubble-wrap">
+              <span 
+                className="hero-name"
+                style={{
+                  opacity: 0,
+                  transform: 'translateY(20px)',
+                  animation: 'heroFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 400ms forwards'
+                }}
+              >
+                Ivan Linkevich
+              </span>
+              <span 
+                className="hero-bubble-wrap"
+                style={{
+                  opacity: 0,
+                  transform: 'translateY(20px)',
+                  animation: 'heroFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards'
+                }}
+              >
                 <span className="hero-bubble">
                   <TypewriterText words={HERO_WORDS} fontSize={14} />
                 </span>
@@ -56,7 +77,15 @@ export default function HomePage() {
           </div>
 
           <div className="hero-footer">
-            <nav className="hero-contacts" aria-label="Contacts">
+            <nav 
+              className="hero-contacts" 
+              aria-label="Contacts"
+              style={{
+                opacity: 0,
+                transform: 'translateY(20px)',
+                animation: 'heroFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 700ms forwards'
+              }}
+            >
               <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
                 Telegram
               </LinkRise>
@@ -71,7 +100,14 @@ export default function HomePage() {
               </LinkRise>
             </nav>
 
-            <p className="hero-tagline">
+            <p 
+              className="hero-tagline"
+              style={{
+                opacity: 0,
+                transform: 'translateY(20px)',
+                animation: 'heroFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 800ms forwards'
+              }}
+            >
               Превращаю сложные данные в понятные продукты, которые помогают людям{"\n"}и приносят прибыль бизнесу
             </p>
           </div>
