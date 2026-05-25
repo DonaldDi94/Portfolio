@@ -510,6 +510,10 @@ section { padding: 120px 0; }
 }
 
 /* Для career-row переопределяем отступы для центрирования */
+.career-row__brand-cell { 
+  font-size: 28px; 
+}
+
 .career-row__brand-cell .rise-swap__row--bottom {
   margin-top: 16px;
 }
