@@ -432,12 +432,12 @@ section { padding: 120px 0; }
   display: flex;
   align-items: center;
   height: 52px;
-  transition: transform 0.5s var(--ease-out);
-  will-change: transform;
+  transition: none;
+  will-change: auto;
 }
 
 .career-row:hover .career-row__content {
-  transform: translateY(-4px);
+  transform: none;
 }
 
 .career-row__cell { 
@@ -475,6 +475,11 @@ section { padding: 120px 0; }
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: inherit;
+  transition: color 0.3s ease;
+}
+
+.career-row:hover .career-name {
+  color: var(--accent);
 }
 
 /* ============================================================
