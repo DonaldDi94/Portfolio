@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .hero-footer {
   display: grid;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: 1fr 500px;
   align-items: start;
   gap: 24px;
   padding: 20px 0 0;
@@ -218,11 +218,12 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   color: #9e9e9c;
   font-size: 24px;
   line-height: 1.1;
-  max-width: 500px;
+  max-width: 640px;
   justify-self: end;
   text-align: left;
   font-weight: 600;
   letter-spacing: -0.5px;
+  transform: translate(20px, -48px);
 }
 
 /* ============================================================
@@ -418,7 +419,7 @@ section { padding: 120px 0; }
 
 .career-row {
   display: grid;
-  grid-template-columns: 280px 1fr auto;
+  grid-template-columns: 332px 1fr auto;
   align-items: center;
   gap: 32px;
   padding: 18px 0;
@@ -431,12 +432,12 @@ section { padding: 120px 0; }
   display: flex;
   align-items: center;
   height: 52px;
-  transition: transform 0.5s var(--ease-out);
-  will-change: transform;
+  transition: none;
+  will-change: auto;
 }
 
 .career-row:hover .career-row__content {
-  transform: translateY(-4px);
+  transform: none;
 }
 
 .career-row__cell { 
@@ -461,8 +462,8 @@ section { padding: 120px 0; }
 }
 
 .career-logo {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-radius: 14px;
   overflow: hidden;
   flex-shrink: 0;
@@ -473,6 +474,12 @@ section { padding: 120px 0; }
 .career-name {
   font-weight: 500;
   letter-spacing: -0.02em;
+  font-size: inherit;
+  transition: color 0.3s ease;
+}
+
+.career-row .career-name:hover {
+  color: var(--accent);
 }
 
 /* ============================================================
@@ -509,6 +516,10 @@ section { padding: 120px 0; }
 }
 
 /* Для career-row переопределяем отступы для центрирования */
+.career-row__brand-cell { 
+  font-size: 28px; 
+}
+
 .career-row__brand-cell .rise-swap__row--bottom {
   margin-top: 16px;
 }
@@ -519,14 +530,13 @@ section { padding: 120px 0; }
 
 /* В ячейке brand высота больше из-за логотипа */
 .career-row__brand-cell .rise-swap,
-.career-row__brand-cell .rise-swap__row { height: 52px; line-height: 52px; }
-.career-row__brand-cell .career-brand { line-height: 52px; }
+.career-row__brand-cell .rise-swap__row { height: 56px; line-height: 56px; }
 
 /* Устанавливаем единую высоту для всех ячеек */
 .career-row__mid .rise-swap,
 .career-row__mid .rise-swap__row,
 .career-row__end .rise-swap,
-.career-row__end .rise-swap__row { height: 52px; line-height: 52px; }
+.career-row__end .rise-swap__row { height: 56px; line-height: 56px; }
 
 .rise-swap--trigger-self:hover .rise-swap__inner { transform: translateY(calc(-100% - 16px)); }
 .rise-trigger:hover .rise-swap__inner { transform: translateY(calc(-100% - 16px)); }
@@ -900,8 +910,8 @@ section { padding: 120px 0; }
     padding: 14px 0;
   }
   .career-row__brand { grid-area: brand; }
-  .career-row__mid { grid-area: mid; color: var(--text-muted); font-size: 16px; }
-  .career-row__end { grid-area: end; font-size: 16px; }
+  .career-row__mid { grid-area: mid; color: var(--text-muted); font-size: 18px; }
+  .career-row__end { grid-area: end; font-size: 18px; }
 
   .philosophy-grid { grid-template-columns: 1fr; gap: 32px; justify-items: center; text-align: center; }
   .philosophy-img { width: 220px; height: 220px; }

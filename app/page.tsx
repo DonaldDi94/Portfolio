@@ -12,6 +12,7 @@ import CaseCard from './components/CaseCard';
 import CareerRow from './components/CareerRow';
 import PhilosophyText from './components/PhilosophyText';
 import SkillItem from './components/SkillItem';
+import Footer from './components/Footer';
 
 const HERO_WORDS = ['Hello', 'World', 'Hello', 'Owners', 'Hello', 'Developers', 'Hello', 'QA', 'Hello', 'DevOps'];
 
@@ -71,8 +72,7 @@ export default function HomePage() {
             </nav>
 
             <p className="hero-tagline">
-              Превращаю неопределённость и разрозненные массивы данных в ясные и
-              понятные продукты, которые приносят пользу и прибыль
+              Превращаю неопределённость и хаос данных в понятные продукты, которые приносят пользу людям и прибыль бизнесу
             </p>
           </div>
         </div>
@@ -161,57 +161,7 @@ export default function HomePage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer">
-        <div className="container footer-grid">
-          <div className="footer-logo" aria-hidden>
-            <svg className="ring-text" viewBox="0 0 200 200">
-              <defs>
-                <path
-                  id="circlePath"
-                  d="M 100,100 m -85,0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0"
-                />
-              </defs>
-              <text
-                fontSize="13"
-                fill="#8a8a8a"
-                letterSpacing="2"
-                fontFamily="var(--mono)"
-              >
-                <textPath href="#circlePath">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing • Lorem
-                  ipsum dolor sit amet •
-                </textPath>
-              </text>
-            </svg>
-            <div className="center-logo">
-              <div>G</div>
-            </div>
-          </div>
-
-          <div className="footer-right">
-            <nav className="footer-contacts" aria-label="Footer contacts">
-              <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
-                Telegram
-              </LinkRise>
-              <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
-              <LinkRise
-                href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="accent"
-              >
-                Download CV
-              </LinkRise>
-              <LinkRise href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" className="dribbble">
-                Dribbble
-              </LinkRise>
-            </nav>
-            <p className="footer-copy">
-              {'{ grosstol 2026 © all rights reserved }'}
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
