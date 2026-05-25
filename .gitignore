@@ -1,4 +1,4 @@
-```
+```gitignore
 # Dependencies
 node_modules/
 
@@ -13,12 +13,6 @@ out/
 .env.local
 .env.*
 
-# IDE specific
-.vscode/
-.idea/
-*.swp
-*.swo
-
 # Python
 __pycache__/
 *.pyc
@@ -28,24 +22,47 @@ __pycache__/
 env/
 venv/
 .venv/
-.ENV
-.python-version
-.pytest_cache/
-.mypy_cache/
+pip-log.txt
+pipenv.lock
+.tox/
+.coverage
+coverage/
+htmlcov/
 
 # Logs
 *.log
 
 # OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Temporary files
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
 *.tmp
-*.temp
+
+# Testing
+coverage/
+.nyc_output
+istanbul/
+.mocha
+.jest/
+
+# Compiled JavaScript
+*.js.map
+*.jsx.map
+*.ts.map
+*.tsx.map
+
+# Next.js
+.next/
+.cache/
+.output/
 ```

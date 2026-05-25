@@ -22,14 +22,15 @@ export default function HomePage() {
       <section className="hero">
         <div className="container">
           <h1 className="hero-meta">
-            <span className="product-text">{'{p'}</span>
+            <span className="product-text orange">{'{'}</span>
+            <span className="product-text">p</span>
             <span className="product-text">r</span>
             <span className="product-text">o</span>
             <span className="product-text">d</span>
             <span className="product-text">u</span>
             <span className="product-text">c</span>
             <span className="product-text">t</span>
-            <span className="product-text">{'}'}</span>
+            <span className="product-text orange">{'}'}</span>
           </h1>
 
           <div className="hero-stage">

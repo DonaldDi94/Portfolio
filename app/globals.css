@@ -112,10 +112,16 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   letter-spacing: -0.02em;
   line-height: 1.3em;
   padding-left: 20px;
+  font-weight: 400;
 }
 
 .hero-meta .product-text {
   font-size: 28px;
+  color: rgb(153, 153, 153);
+  font-weight: 400;
+}
+
+.hero-meta .product-text.orange {
   color: rgb(249, 63, 24);
 }
 
