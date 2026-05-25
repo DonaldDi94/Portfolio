@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .hero-name-row {
   position: absolute;
-  right: calc(16% + 78px);
+  right: calc(16% + 74px);
   top: 4px;
   z-index: 3;
   display: flex;
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   height: 28px;
 
   position: absolute;
-  left: calc(100% + 8px);
+  left: calc(100% + 4px);
   top: 20px;
 }
 
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   height: 14px;
   color: var(--text);
   top: -10px;
-  left: -2px;
+  left: 2px;
   transform: rotate(-12deg);
 }
 
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   text-align: left;
   font-weight: 600;
   letter-spacing: -0.5px;
-  transform: translate(20px, -48px);
+  transform: translate(26px, -48px);
 }
 
 /* ============================================================

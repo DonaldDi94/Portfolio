@@ -9,6 +9,7 @@
 
 /* Фоновые элементы */
 .footer-glow {
+  display: none;
   position: absolute;
   width: 580px;
   height: 580px;
