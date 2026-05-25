@@ -14,7 +14,7 @@ import PhilosophyText from './components/PhilosophyText';
 import SkillItem from './components/SkillItem';
 import Footer from './components/Footer';
 
-const HERO_WORDS = ['Hello', 'World', 'Hello', 'Owners', 'Hello', 'Developers', 'Hello', 'QA', 'Hello', 'DevOps'];
+const HERO_WORDS = ['Hello', 'HR', 'Designers', 'Owners', 'World'];
 
 export default function HomePage() {
   return (

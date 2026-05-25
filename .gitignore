@@ -1,66 +1,58 @@
-# Examples
-
-## Example 1:
-
-Input:
-### Added files:
-[src/main.py, README.md, config.json]
-
-### Deleted files:
-[old/unused.py]
-
-### Modified files:
-[utils.py]
-
-### current .gitignore Content
-(empty)
-
-Expected Output:
-(empty — output nothing)
-
-## Example 2 (Project with artifacts):
-
-Input:
-### Added files:
-[pycache/main.cpython-310.pyc, dist/app.js, .env.local, .vscode/settings.json]
-
-### Deleted files:
-[]
-
-### Modified files:
-[]
-
-### current .gitignore Content
-*.log
-
-Expected Output:
 ```
-# Compiled and build artifacts
-*.pyc
-__pycache__/
-*.o
-*.obj
-dist/
-build/
-
 # Dependencies
-.venv/
-venv/
 node_modules/
 
-# Logs and temp files
-*.log
-*.tmp
-*.swp
+# Build outputs
+dist/
+build/
+.next/
+out/
 
-# Environment
+# Logs
+*.log
+
+# Environment variables
 .env
 .env.local
-.env.*
+*.env.*
 
-# Editors
+# IDE files
 .vscode/
 .idea/
-```
+*.swp
+*.swo
 
-Final reminder: Output ONLY the .gitignore content. If nothing should be ignored, output NOTHING.
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/refs/replace/*
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.__pycache__/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+```
