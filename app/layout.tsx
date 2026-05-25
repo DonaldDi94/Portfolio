@@ -10,12 +10,12 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  title: 'GrossCV',
-  description: 'Anatolii Bolshanin — Product Designer portfolio',
+  title: 'Ivan Link Portfolio',
+  description: 'Ivan Link — Product Designer portfolio',
   icons: { icon: '/favicon.png' },
   openGraph: {
-    title: 'GrossCV',
-    description: 'Anatolii Bolshanin — Product Designer portfolio',
+    title: 'Ivan Link Portfolio',
+    description: 'Ivan Link — Product Designer portfolio',
     type: 'website',
     images: ['/og-image.png'],
   },
