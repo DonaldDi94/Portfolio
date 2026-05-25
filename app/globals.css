@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .hero-title {
-  font-size: clamp(80px, 18vw, 260px);
+  font-size: 280px;
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 0.92;
