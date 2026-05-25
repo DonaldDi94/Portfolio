@@ -14,7 +14,7 @@ import PhilosophyText from './components/PhilosophyText';
 import SkillItem from './components/SkillItem';
 import Footer from './components/Footer';
 
-const HERO_WORDS = ['Hello', 'World', 'Hello', 'Owners', 'Hello', 'Developers', 'Hello', 'QA', 'Hello', 'DevOps'];
+const HERO_WORDS = ['Hello', 'HR', 'Designers', 'Owners', 'World'];
 
 export default function HomePage() {
   return (
@@ -72,7 +72,7 @@ export default function HomePage() {
             </nav>
 
             <p className="hero-tagline">
-              Превращаю неопределённость и хаос данных в понятные продукты, которые приносят пользу людям и прибыль бизнесу
+              Превращаю сложные данные в понятные продукты, которые помогают людям{"\n"}и приносят прибыль бизнесу
             </p>
           </div>
         </div>

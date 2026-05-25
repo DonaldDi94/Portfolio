@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .hero-name-row {
   position: absolute;
-  right: calc(16% + 78px);
+  right: calc(16% + 74px);
   top: 4px;
   z-index: 3;
   display: flex;
@@ -156,17 +156,22 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   height: 28px;
 
   position: absolute;
-  left: calc(100% + 8px);
+  left: calc(100% + 4px);
   top: 20px;
+  transition: transform 0.2s ease;
+}
+
+.hero-bubble-wrap:hover {
+  transform: translateY(12px);
 }
 
 .hero-bubble {
   background: var(--accent);
   border: 2px solid #d43819;
   border-radius: 2px 32px 32px 32px;
-  padding: 6px 14px 6px 12px;
+  padding: 6px 12px 6px 12px;
   min-height: 28px;
-  min-width: 50px;
+  min-width: 38px;
   margin-left: 10px;
   display: inline-flex;
   align-items: center;
@@ -181,8 +186,8 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   height: 14px;
   color: var(--text);
   top: -10px;
-  left: -2px;
-  transform: rotate(-12deg);
+  left: 2px;
+  transform: rotate(8deg);
 }
 
 .hero-title {
@@ -201,6 +206,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   align-items: start;
   gap: 24px;
   padding: 20px 0 0;
+  height: 22px;
 }
 
 .hero-contacts {
@@ -221,9 +227,9 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   max-width: 640px;
   justify-self: end;
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.5px;
-  transform: translate(20px, -48px);
+  transform: translate(28px, -48px);
 }
 
 /* ============================================================
