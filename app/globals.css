@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   max-width: 640px;
   justify-self: end;
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.5px;
   transform: translate(28px, -48px);
 }
