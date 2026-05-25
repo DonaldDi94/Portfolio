@@ -1,13 +1,9 @@
 import {
   cases,
   careerTrack,
-  otherProjects,
   philosophyPieces,
   skills,
-  testimonials,
 } from './data';
-import LanguageSelect from './components/LanguageSelect';
-import TestimonialsCarousel from './components/TestimonialsCarousel';
 import Reveal from './components/Reveal';
 import HeroTitle from './components/HeroTitle';
 import TypewriterText from './components/TypewriterText';
@@ -25,15 +21,11 @@ export default function HomePage() {
       {/* HERO */}
       <section className="hero">
         <div className="container">
-          <div className="hero-top">
-            <LanguageSelect />
-          </div>
-
           <p className="hero-meta">{'{product}'}</p>
 
           <div className="hero-stage">
             <div className="hero-name-row">
-              <span className="hero-name">Anatolii Bolshanin</span>
+              <span className="hero-name">Ivan Linkevich</span>
               <span className="hero-bubble-wrap">
                 <span className="hero-bubble">
                   <TypewriterText words={HERO_WORDS} fontSize={14} />
@@ -92,22 +84,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* OTHER PROJECTS */}
-      <section id="other-projects">
-        <div className="container">
-          <Reveal>
-            <h2 className="section-title section-title-muted">Другие проекты</h2>
-          </Reveal>
-          <div className="cases-grid">
-            {otherProjects.map((c, idx) => (
-              <Reveal key={c.title} delay={idx * 80}>
-                <CaseCard item={c} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CAREER TRACK */}
       <section id="career">
         <div className="container">
@@ -155,13 +131,6 @@ export default function HomePage() {
               <PhilosophyText pieces={philosophyPieces} />
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section className="testimonials" id="testimonials">
-        <div className="container">
-          <TestimonialsCarousel items={testimonials} />
         </div>
       </section>
 
