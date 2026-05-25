@@ -92,6 +92,7 @@ export const careerTrack: CareerItem[] = [
     duration: '1.5 года',
     role: 'Senior Product Designer в B2B и B2E',
     period: '2024-2025',
+    url: 'https://www.thprom.ru/',
   },
   {
     logo: '/logos/pochta-tech.png',
@@ -100,6 +101,7 @@ export const careerTrack: CareerItem[] = [
     duration: '1 год',
     role: 'Senior UX/UI Designer',
     period: '2023-2024',
+    url: 'https://pochta.tech/',
   },
   {
     logo: '/logos/ak-bars.png',
@@ -108,6 +110,7 @@ export const careerTrack: CareerItem[] = [
     duration: '1 год',
     role: 'Lead направления',
     period: '2022-2023',
+    url: 'https://www.akbars.ru/',
   },
   {
     logo: '/logos/astral.png',
@@ -116,6 +119,7 @@ export const careerTrack: CareerItem[] = [
     duration: '3 года',
     role: 'UX/UI → Team Lead',
     period: '2019-2022',
+    url: 'https://astral.ru/',
   },
 ];
 
