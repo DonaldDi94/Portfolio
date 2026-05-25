@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .hero-footer {
   display: grid;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: 1fr 500px;
   align-items: start;
   gap: 24px;
   padding: 20px 0 0;
