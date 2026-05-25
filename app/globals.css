@@ -461,8 +461,8 @@ section { padding: 120px 0; }
 }
 
 .career-logo {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-radius: 14px;
   overflow: hidden;
   flex-shrink: 0;
@@ -473,6 +473,7 @@ section { padding: 120px 0; }
 .career-name {
   font-weight: 500;
   letter-spacing: -0.02em;
+  font-size: 18px;
 }
 
 /* ============================================================
@@ -519,14 +520,14 @@ section { padding: 120px 0; }
 
 /* В ячейке brand высота больше из-за логотипа */
 .career-row__brand-cell .rise-swap,
-.career-row__brand-cell .rise-swap__row { height: 52px; line-height: 52px; }
-.career-row__brand-cell .career-brand { line-height: 52px; }
+.career-row__brand-cell .rise-swap__row { height: 56px; line-height: 56px; }
+.career-row__brand-cell .career-brand { line-height: 56px; }
 
 /* Устанавливаем единую высоту для всех ячеек */
 .career-row__mid .rise-swap,
 .career-row__mid .rise-swap__row,
 .career-row__end .rise-swap,
-.career-row__end .rise-swap__row { height: 52px; line-height: 52px; }
+.career-row__end .rise-swap__row { height: 56px; line-height: 56px; }
 
 .rise-swap--trigger-self:hover .rise-swap__inner { transform: translateY(calc(-100% - 16px)); }
 .rise-trigger:hover .rise-swap__inner { transform: translateY(calc(-100% - 16px)); }
@@ -900,8 +901,8 @@ section { padding: 120px 0; }
     padding: 14px 0;
   }
   .career-row__brand { grid-area: brand; }
-  .career-row__mid { grid-area: mid; color: var(--text-muted); font-size: 16px; }
-  .career-row__end { grid-area: end; font-size: 16px; }
+  .career-row__mid { grid-area: mid; color: var(--text-muted); font-size: 18px; }
+  .career-row__end { grid-area: end; font-size: 18px; }
 
   .philosophy-grid { grid-template-columns: 1fr; gap: 32px; justify-items: center; text-align: center; }
   .philosophy-img { width: 220px; height: 220px; }
