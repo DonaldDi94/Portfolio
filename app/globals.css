@@ -32,6 +32,11 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 
+/* Предотвращаем инверсию цветов при обновлении страницы */
+html {
+  color-scheme: light only;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
