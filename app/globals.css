@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .hero-tagline {
   font-family: var(--font-onest), 'Onest', sans-serif;
   color: #9e9e9c;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.4;
   max-width: 360px;
   justify-self: end;
