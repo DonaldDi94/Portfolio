@@ -21,7 +21,6 @@ export default function CareerRow({ item }: Props) {
       href={item.url}
       target="_blank"
       rel="noopener noreferrer"
-      title={`${item.role} • ${item.period}`}
     >
       <span className="career-row__cell career-row__brand-cell">
         <div className="career-row__content">

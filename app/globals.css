@@ -478,7 +478,7 @@ section { padding: 120px 0; }
   transition: color 0.3s ease;
 }
 
-.career-row:hover .career-name {
+.career-row .career-name:hover {
   color: var(--accent);
 }
 
