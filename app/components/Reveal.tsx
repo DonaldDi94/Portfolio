@@ -40,7 +40,8 @@ export default function Reveal({
     opacity: visible ? 1 : 0,
     transform: visible ? 'translate3d(0,0,0)' : `translate3d(0,${y}px,0)`,
     transition: `opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms`,
-    willChange: 'opacity, transform',
+    willChange: visible ? 'auto' : 'opacity, transform',
+    backfaceVisibility: 'hidden',
   };
 
   const Component: any = Tag;
