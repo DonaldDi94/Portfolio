@@ -206,11 +206,11 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   color: #9e9e9c;
   font-size: 24px;
   line-height: 1.4;
-  max-width: 360px;
+  max-width: 500px;
   justify-self: end;
   text-align: left;
-  font-weight: 400;
-  transform: translateX(-108px);
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 /* ============================================================
