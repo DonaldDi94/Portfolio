@@ -24,13 +24,14 @@ export default function HomePage() {
       <section className="hero">
         <div className="container">
           <div className="hero-stage">
+            {/* Блок с именем и курсором - появляется справа */}
             <div className="hero-name-row">
               <span 
                 className="hero-bubble-wrap"
                 style={{
                   opacity: 0,
-                  transform: 'translateX(100px)',
-                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 600ms forwards'
+                  transform: 'translateX(80px)',
+                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 800ms forwards'
                 }}
               >
                 <span className="hero-bubble">
@@ -50,34 +51,38 @@ export default function HomePage() {
                 className="hero-name"
                 style={{
                   opacity: 0,
-                  transform: 'translateX(100px)',
-                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 700ms forwards'
+                  transform: 'translateX(80px)',
+                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 900ms forwards'
                 }}
               >
                 Ivan Linkevich
               </span>
             </div>
-            <HeroTitle delay={1000}>Designer</HeroTitle>
+
+            {/* {product} блок - появляется после имени */}
+            <h1 className="hero-meta">
+              {['{', 'p', 'r', 'o', 'd', 'u', 'c', 't', '}'].map((char, idx) => (
+                <span 
+                  key={idx} 
+                  className={`product-text${char === '{' || char === '}' ? ' orange' : ''}`}
+                  style={{
+                    display: 'inline-block',
+                    opacity: 0,
+                    transform: 'rotate(90deg)',
+                    animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${1000 + idx * 50}ms forwards`
+                  }}
+                >
+                  {char}
+                </span>
+              ))}
+            </h1>
+
+            {/* Designer - появляется после {product} */}
+            <HeroTitle delay={1200}>Designer</HeroTitle>
           </div>
 
-          <h1 className="hero-meta">
-            {['{', 'p', 'r', 'o', 'd', 'u', 'c', 't', '}'].map((char, idx) => (
-              <span 
-                key={idx} 
-                className={`product-text${char === '{' || char === '}' ? ' orange' : ''}`}
-                style={{
-                  display: 'inline-block',
-                  opacity: 0,
-                  transform: 'rotate(90deg)',
-                  animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${800 + idx * 50}ms forwards`
-                }}
-              >
-                {char}
-              </span>
-            ))}
-          </h1>
-
           <div className="hero-footer">
+            {/* Кнопки контактов - влетают первыми слева */}
             <nav 
               className="hero-contacts" 
               aria-label="Contacts"
@@ -102,7 +107,8 @@ export default function HomePage() {
               </HeroReveal>
             </nav>
 
-            <HeroReveal delay={1100}>
+            {/* Текст описания - появляется последним */}
+            <HeroReveal delay={1400}>
               <p className="hero-tagline">
                 Превращаю сложные данные в понятные продукты, которые помогают людям{"\\n"}и приносят прибыль бизнесу
               </p>
