@@ -30,7 +30,7 @@ export default function HomePage() {
                 style={{
                   display: 'inline-block',
                   opacity: 0,
-                  transform: 'translateY(20px)',
+                  transform: 'rotate(90deg)',
                   animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${100 + idx * 50}ms forwards`
                 }}
               >
