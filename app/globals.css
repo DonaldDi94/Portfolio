@@ -102,7 +102,23 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .hero-contacts .link-rise:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+}
+
+/* Отключаем анимацию смены строк для кнопок контактов */
+.hero-contacts .link-rise:hover .link-rise__inner {
+  transform: none;
+}
+
+/* Сохраняем исходный цвет при ховере */
+.hero-contacts .link-rise--accent .link-rise__row--1 {
+  color: var(--accent-hot);
+}
+.hero-contacts .link-rise--accent:hover .link-rise__row--1 {
+  color: var(--accent-hot);
+}
+.hero-contacts .link-rise:not(.link-rise--accent):hover .link-rise__row--1 {
+  color: var(--text);
 }
 
 /* ============================================================
