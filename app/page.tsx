@@ -89,7 +89,7 @@ export default function HomePage() {
               aria-label="Contacts"
               style={{ display: 'flex', flexDirection: 'row-reverse' }}
             >
-              <HeroReveal delay={500} fromLeft>
+              <HeroReveal delay={200} fromLeft>
                 <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
                   Telegram
                 </LinkRise>
@@ -97,7 +97,7 @@ export default function HomePage() {
               <HeroReveal delay={350} fromLeft>
                 <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
               </HeroReveal>
-              <HeroReveal delay={200} fromLeft>
+              <HeroReveal delay={500} fromLeft>
                 <LinkRise
                   href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
                   target="_blank"
