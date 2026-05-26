@@ -82,13 +82,13 @@ export default function HomePage() {
               className="hero-contacts" 
               aria-label="Contacts"
             >
-              <HeroReveal delay={550} fromLeft>
-                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
-              </HeroReveal>
               <HeroReveal delay={700} fromLeft>
                 <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
                   Telegram
                 </LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={550} fromLeft>
+                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
               </HeroReveal>
               <HeroReveal delay={400} fromLeft>
                 <LinkRise
