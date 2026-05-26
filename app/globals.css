@@ -98,16 +98,11 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 /* Стили для кнопок контактов в hero */
 .hero-contacts .link-rise {
-  transition: transform 0.2s ease;
+  /* Убран transition: transform, чтобы не ломать анимацию LinkRise */
 }
 
 .hero-contacts .link-rise:hover {
   transform: translateY(-4px);
-}
-
-/* Отключаем анимацию смены строк для кнопок контактов */
-.hero-contacts .link-rise:hover .link-rise__inner {
-  transform: none;
 }
 
 /* Сохраняем исходный цвет при ховере */
