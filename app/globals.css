@@ -98,31 +98,22 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 /* Стили для кнопок контактов в hero */
 .hero-contacts .link-rise {
-  transition: transform 0.2s ease;
+  /* Убран transition: transform, чтобы не ломать анимацию LinkRise */
 }
 
 .hero-contacts .link-rise:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
-.hero-contacts .link-rise:hover .link-rise__row {
-  color: inherit;
+/* Сохраняем исходный цвет при ховере */
+.hero-contacts .link-rise--accent .link-rise__row--1 {
+  color: var(--accent-hot);
 }
-
-/* Подчеркивание для кнопок контактов */
-.hero-contacts .link-rise::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 1px;
-  background: currentColor;
-  transition: width 0.3s ease;
+.hero-contacts .link-rise--accent:hover .link-rise__row--1 {
+  color: var(--accent-hot);
 }
-
-.hero-contacts .link-rise:hover::after {
-  width: 100%;
+.hero-contacts .link-rise:not(.link-rise--accent):hover .link-rise__row--1 {
+  color: var(--text);
 }
 
 /* ============================================================
