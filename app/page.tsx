@@ -23,22 +23,32 @@ export default function HomePage() {
       {/* HERO */}
       <section className="hero">
         <div className="container">
-          <h1 className="hero-meta">
-            {['{', 'p', 'r', 'o', 'd', 'u', 'c', 't', '}'].map((char, idx) => (
-              <span 
-                key={idx} 
-                className={`product-text${char === '{' || char === '}' ? ' orange' : ''}`}
-                style={{
-                  display: 'inline-block',
-                  opacity: 0,
-                  transform: 'rotate(90deg)',
-                  animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${100 + idx * 50}ms forwards`
-                }}
-              >
-                {char}
-              </span>
-            ))}
-          </h1>
+          <div className="hero-footer">
+            <nav 
+              className="hero-contacts" 
+              aria-label="Contacts"
+              style={{ display: 'flex', flexDirection: 'row-reverse' }}
+            >
+              <HeroReveal delay={200} fromLeft>
+                <LinkRise
+                  href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="accent"
+                >
+                  Download CV
+                </LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={350} fromLeft>
+                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={500} fromLeft>
+                <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
+                  Telegram
+                </LinkRise>
+              </HeroReveal>
+            </nav>
+          </div>
 
           <div className="hero-stage">
             <div className="hero-name-row">
@@ -47,7 +57,7 @@ export default function HomePage() {
                 style={{
                   opacity: 0,
                   transform: 'translateX(80px)',
-                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 400ms forwards'
+                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 700ms forwards'
                 }}
               >
                 <span className="hero-bubble">
@@ -68,7 +78,7 @@ export default function HomePage() {
                 style={{
                   opacity: 0,
                   transform: 'translateX(80px)',
-                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards'
+                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 800ms forwards'
                 }}
               >
                 Ivan Linkevich
@@ -77,33 +87,25 @@ export default function HomePage() {
             <HeroTitle>Designer</HeroTitle>
           </div>
 
-          <div className="hero-footer">
-            <nav 
-              className="hero-contacts" 
-              aria-label="Contacts"
-              style={{ display: 'flex', flexDirection: 'row-reverse' }}
-            >
-              <HeroReveal delay={400} fromLeft>
-                <LinkRise
-                  href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="accent"
-                >
-                  Download CV
-                </LinkRise>
-              </HeroReveal>
-              <HeroReveal delay={550} fromLeft>
-                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
-              </HeroReveal>
-              <HeroReveal delay={700} fromLeft>
-                <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
-                  Telegram
-                </LinkRise>
-              </HeroReveal>
-            </nav>
+          <h1 className="hero-meta">
+            {['{', 'p', 'r', 'o', 'd', 'u', 'c', 't', '}'].map((char, idx) => (
+              <span 
+                key={idx} 
+                className={`product-text${char === '{' || char === '}' ? ' orange' : ''}`}
+                style={{
+                  display: 'inline-block',
+                  opacity: 0,
+                  transform: 'rotate(90deg)',
+                  animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${1100 + idx * 50}ms forwards`
+                }}
+              >
+                {char}
+              </span>
+            ))}
+          </h1>
 
-            <HeroReveal delay={600}>
+          <div className="hero-footer">
+            <HeroReveal delay={1500}>
               <p className="hero-tagline">
                 Превращаю сложные данные в понятные продукты, которые помогают людям{"\n"}и приносят прибыль бизнесу
               </p>
