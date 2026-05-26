@@ -13,6 +13,7 @@ import CareerRow from './components/CareerRow';
 import PhilosophyText from './components/PhilosophyText';
 import SkillItem from './components/SkillItem';
 import Footer from './components/Footer';
+import HeroReveal from './components/HeroReveal';
 
 const HERO_WORDS = ['Hello', 'HR', 'Designers', 'Owners', 'World'];
 
@@ -22,41 +23,15 @@ export default function HomePage() {
       {/* HERO */}
       <section className="hero">
         <div className="container">
-          <h1 className="hero-meta">
-            {['{', 'p', 'r', 'o', 'd', 'u', 'c', 't', '}'].map((char, idx) => (
-              <span 
-                key={idx} 
-                className={`product-text${char === '{' || char === '}' ? ' orange' : ''}`}
-                style={{
-                  display: 'inline-block',
-                  opacity: 0,
-                  transform: 'rotate(90deg)',
-                  animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${100 + idx * 50}ms forwards`
-                }}
-              >
-                {char}
-              </span>
-            ))}
-          </h1>
-
           <div className="hero-stage">
+            {/* Блок с именем и курсором - появляется справа */}
             <div className="hero-name-row">
-              <span 
-                className="hero-name"
-                style={{
-                  opacity: 0,
-                  transform: 'translateY(20px)',
-                  animation: 'heroFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 400ms forwards'
-                }}
-              >
-                Ivan Linkevich
-              </span>
               <span 
                 className="hero-bubble-wrap"
                 style={{
                   opacity: 0,
-                  transform: 'translateY(20px)',
-                  animation: 'heroFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards'
+                  transform: 'translateX(80px)',
+                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 800ms forwards'
                 }}
               >
                 <span className="hero-bubble">
@@ -72,44 +47,74 @@ export default function HomePage() {
                   <path d="M1.2 1.2 L14.5 6.4 L7.9 8.4 L5.6 14.6 Z" />
                 </svg>
               </span>
+              <span 
+                className="hero-name"
+                style={{
+                  opacity: 0,
+                  transform: 'translateX(80px)',
+                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 900ms forwards'
+                }}
+              >
+                Ivan Linkevich
+              </span>
             </div>
-            <HeroTitle>Designer</HeroTitle>
+
+            {/* {product} блок - появляется после имени */}
+            <h1 className="hero-meta" style={{ position: 'relative', top: '4px' }}>
+              {['{', 'p', 'r', 'o', 'd', 'u', 'c', 't', '}'].map((char, idx) => (
+                <span 
+                  key={idx} 
+                  className={`product-text${char === '{' || char === '}' ? ' orange' : ''}`}
+                  style={{
+                    display: 'inline-block',
+                    opacity: 0,
+                    transform: 'rotate(90deg)',
+                    animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${1000 + idx * 50}ms forwards`,
+                    fontSize: '24px'
+                  }}
+                >
+                  {char}
+                </span>
+              ))}
+            </h1>
+
+            {/* Designer - появляется после {product} */}
+            <HeroTitle delay={1200}>Designer</HeroTitle>
           </div>
 
           <div className="hero-footer">
+            {/* Кнопки контактов - влетают первыми слева */}
             <nav 
               className="hero-contacts" 
               aria-label="Contacts"
-              style={{
-                opacity: 0,
-                transform: 'translateY(20px)',
-                animation: 'heroFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 700ms forwards'
-              }}
+              style={{ display: 'flex', flexDirection: 'row-reverse' }}
             >
-              <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
-                Telegram
-              </LinkRise>
-              <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
-              <LinkRise
-                href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="accent"
-              >
-                Download CV
-              </LinkRise>
+              <HeroReveal delay={500} fromLeft>
+                <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
+                  Telegram
+                </LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={350} fromLeft>
+                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={200} fromLeft>
+                <LinkRise
+                  href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="accent"
+                >
+                  Download CV
+                </LinkRise>
+              </HeroReveal>
             </nav>
 
-            <p 
-              className="hero-tagline"
-              style={{
-                opacity: 0,
-                transform: 'translateY(20px)',
-                animation: 'heroFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 800ms forwards'
-              }}
-            >
-              Превращаю сложные данные в понятные продукты, которые помогают людям{"\n"}и приносят прибыль бизнесу
-            </p>
+            {/* Текст описания - появляется последним, влетает справа */}
+            <HeroReveal delay={600}>
+              <p className="hero-tagline hero-tagline-right">
+                Превращаю сложные данные в понятные продукты, которые помогают людям и приносят прибыль бизнесу
+              </p>
+            </HeroReveal>
           </div>
         </div>
       </section>
