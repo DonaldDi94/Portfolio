@@ -46,7 +46,7 @@ export default function HomePage() {
                 className="hero-bubble-wrap"
                 style={{
                   opacity: 0,
-                  transform: 'translateX(100px)',
+                  transform: 'translateX(80px)',
                   animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 400ms forwards'
                 }}
               >
@@ -67,7 +67,7 @@ export default function HomePage() {
                 className="hero-name"
                 style={{
                   opacity: 0,
-                  transform: 'translateX(100px)',
+                  transform: 'translateX(80px)',
                   animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards'
                 }}
               >
@@ -81,15 +81,8 @@ export default function HomePage() {
             <nav 
               className="hero-contacts" 
               aria-label="Contacts"
+              style={{ display: 'flex', flexDirection: 'row-reverse' }}
             >
-              <HeroReveal delay={700} fromLeft>
-                <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
-                  Telegram
-                </LinkRise>
-              </HeroReveal>
-              <HeroReveal delay={550} fromLeft>
-                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
-              </HeroReveal>
               <HeroReveal delay={400} fromLeft>
                 <LinkRise
                   href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
@@ -98,6 +91,14 @@ export default function HomePage() {
                   variant="accent"
                 >
                   Download CV
+                </LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={550} fromLeft>
+                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={700} fromLeft>
+                <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
+                  Telegram
                 </LinkRise>
               </HeroReveal>
             </nav>
