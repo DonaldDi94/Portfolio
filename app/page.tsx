@@ -69,7 +69,8 @@ export default function HomePage() {
                     display: 'inline-block',
                     opacity: 0,
                     transform: 'rotate(90deg)',
-                    animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${1000 + idx * 50}ms forwards`
+                    animation: `heroFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${1000 + idx * 50}ms forwards`,
+                    fontSize: '24px'
                   }}
                 >
                   {char}
@@ -86,8 +87,9 @@ export default function HomePage() {
             <nav 
               className="hero-contacts" 
               aria-label="Contacts"
+              style={{ display: 'flex', flexDirection: 'row-reverse' }}
             >
-              <HeroReveal delay={200} fromLeft>
+              <HeroReveal delay={500} fromLeft>
                 <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
                   Telegram
                 </LinkRise>
@@ -95,7 +97,7 @@ export default function HomePage() {
               <HeroReveal delay={350} fromLeft>
                 <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
               </HeroReveal>
-              <HeroReveal delay={500} fromLeft>
+              <HeroReveal delay={200} fromLeft>
                 <LinkRise
                   href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
                   target="_blank"
@@ -107,9 +109,9 @@ export default function HomePage() {
               </HeroReveal>
             </nav>
 
-            {/* Текст описания - появляется последним */}
+            {/* Текст описания - появляется последним, влетает справа */}
             <HeroReveal delay={600}>
-              <p className="hero-tagline">
+              <p className="hero-tagline hero-tagline-right">
                 Превращаю сложные данные в понятные продукты, которые помогают людям и приносят прибыль бизнесу
               </p>
             </HeroReveal>
