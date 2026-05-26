@@ -87,16 +87,8 @@ export default function HomePage() {
             <nav 
               className="hero-contacts" 
               aria-label="Contacts"
-              style={{ display: 'flex', flexDirection: 'row-reverse' }}
+              style={{ display: 'flex' }}
             >
-              <HeroReveal delay={500} fromLeft>
-                <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
-                  Telegram
-                </LinkRise>
-              </HeroReveal>
-              <HeroReveal delay={350} fromLeft>
-                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
-              </HeroReveal>
               <HeroReveal delay={200} fromLeft>
                 <LinkRise
                   href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
@@ -105,6 +97,14 @@ export default function HomePage() {
                   variant="accent"
                 >
                   Download CV
+                </LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={350} fromLeft>
+                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={500} fromLeft>
+                <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
+                  Telegram
                 </LinkRise>
               </HeroReveal>
             </nav>
