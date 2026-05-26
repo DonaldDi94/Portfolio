@@ -1,31 +1,24 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
-export default function HeroTitle({ children }: { children: React.ReactNode }) {
-  const ref = useRef<HTMLHeadingElement>(null);
+export default function HeroTitle({ children, delay = 1400 }: { children: React.ReactNode; delay?: number }) {
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    let ticking = false;
-    const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        const y = window.scrollY;
-        const offset = Math.min(y * 0.18, 60);
-        const scale = Math.max(1 - y / 6000, 0.96);
-        el.style.transform = `translate3d(0, ${offset}px, 0) scale(${scale})`;
-        ticking = false;
-      });
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    const timer = setTimeout(() => setVisible(true), delay);
+    return () => clearTimeout(timer);
+  }, [delay]);
 
   return (
-    <h1 className="hero-title" ref={ref}>
+    <h1 
+      className="hero-title"
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0)' : 'translateY(80px)',
+        transition: 'opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), transform 1.2s cubic-bezier(0.22, 1, 0.36, 1)',
+      }}
+    >
       {children}
     </h1>
   );
