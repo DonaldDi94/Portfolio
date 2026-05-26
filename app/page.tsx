@@ -43,21 +43,11 @@ export default function HomePage() {
           <div className="hero-stage">
             <div className="hero-name-row">
               <span 
-                className="hero-name"
-                style={{
-                  opacity: 0,
-                  transform: 'translateY(20px)',
-                  animation: 'heroFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 400ms forwards'
-                }}
-              >
-                Ivan Linkevich
-              </span>
-              <span 
                 className="hero-bubble-wrap"
                 style={{
                   opacity: 0,
-                  transform: 'translateY(20px)',
-                  animation: 'heroFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards'
+                  transform: 'translateX(100px)',
+                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 400ms forwards'
                 }}
               >
                 <span className="hero-bubble">
@@ -72,6 +62,16 @@ export default function HomePage() {
                 >
                   <path d="M1.2 1.2 L14.5 6.4 L7.9 8.4 L5.6 14.6 Z" />
                 </svg>
+              </span>
+              <span 
+                className="hero-name"
+                style={{
+                  opacity: 0,
+                  transform: 'translateX(100px)',
+                  animation: 'heroFadeInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards'
+                }}
+              >
+                Ivan Linkevich
               </span>
             </div>
             <HeroTitle>Designer</HeroTitle>
