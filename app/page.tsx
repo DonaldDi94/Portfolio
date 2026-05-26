@@ -60,7 +60,7 @@ export default function HomePage() {
             </div>
 
             {/* {product} блок - появляется после имени */}
-            <h1 className="hero-meta">
+            <h1 className="hero-meta" style={{ position: 'relative', top: '4px' }}>
               {['{', 'p', 'r', 'o', 'd', 'u', 'c', 't', '}'].map((char, idx) => (
                 <span 
                   key={idx} 
@@ -108,9 +108,9 @@ export default function HomePage() {
             </nav>
 
             {/* Текст описания - появляется последним */}
-            <HeroReveal delay={1400}>
+            <HeroReveal delay={600}>
               <p className="hero-tagline">
-                Превращаю сложные данные в понятные продукты, которые помогают людям{"\\n"}и приносят прибыль бизнесу
+                Превращаю сложные данные в понятные продукты, которые помогают людям и приносят прибыль бизнесу
               </p>
             </HeroReveal>
           </div>
