@@ -13,6 +13,7 @@ import CareerRow from './components/CareerRow';
 import PhilosophyText from './components/PhilosophyText';
 import SkillItem from './components/SkillItem';
 import Footer from './components/Footer';
+import HeroReveal from './components/HeroReveal';
 
 const HERO_WORDS = ['Hello', 'HR', 'Designers', 'Owners', 'World'];
 
@@ -80,36 +81,32 @@ export default function HomePage() {
             <nav 
               className="hero-contacts" 
               aria-label="Contacts"
-              style={{
-                opacity: 0,
-                transform: 'translateY(20px)',
-                animation: 'heroFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 700ms forwards'
-              }}
             >
-              <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
-                Telegram
-              </LinkRise>
-              <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
-              <LinkRise
-                href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="accent"
-              >
-                Download CV
-              </LinkRise>
+              <HeroReveal delay={700} fromLeft>
+                <LinkRise href="https://t.me/GrossTol" target="_blank" rel="noopener noreferrer">
+                  Telegram
+                </LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={850} fromLeft>
+                <LinkRise href="mailto:grosstol@yandex.ru">Email</LinkRise>
+              </HeroReveal>
+              <HeroReveal delay={1000} fromLeft>
+                <LinkRise
+                  href="https://disk.yandex.ru/d/llFnqvnjvEQV5A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="accent"
+                >
+                  Download CV
+                </LinkRise>
+              </HeroReveal>
             </nav>
 
-            <p 
-              className="hero-tagline"
-              style={{
-                opacity: 0,
-                transform: 'translateY(20px)',
-                animation: 'heroFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 800ms forwards'
-              }}
-            >
-              Превращаю сложные данные в понятные продукты, которые помогают людям{"\n"}и приносят прибыль бизнесу
-            </p>
+            <HeroReveal delay={900}>
+              <p className="hero-tagline">
+                Превращаю сложные данные в понятные продукты, которые помогают людям{"\n"}и приносят прибыль бизнесу
+              </p>
+            </HeroReveal>
           </div>
         </div>
       </section>
